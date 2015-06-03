@@ -1,0 +1,27 @@
+#projectstatus {
+    border-radius: 0px;
+
+    .header {
+        th {
+            background-color: #fff;
+            border-radius: 0px;
+
+        }
+        border: none;
+        border-radius: 0px;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgba(0,0,0,.025)!important;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(0,0,0,.075)!important;
+    }
+}
+
+.pane-frame {
+    //margin-top:12px;
+    border: solid 1px #ddd;
+    border-radius: 0px;
+}

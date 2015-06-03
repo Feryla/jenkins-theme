@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import "_base.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "statusTable.scss";
+
+body, table, form, input, td, th, p, textarea, select {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 10pt;
+}
+
+body {
+    background: #fff!important; 
+}
+
+#page-head{
+    position: fixed;
+    height: 102px;
+    left: 0px;
+    right: 0px;
+}
+
+#page-body {
+    position: fixed;
+    top: 102px;
+    bottom: 42px;
+    left: 0px;
+    right: 0px;
+}
+
+#footer-container {
+    position: fixed;
+    height: 42px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+
+#side-panel {
+    border-right: 1px solid #ddd;
+}
+
+#searchform {
+    //display: none !important;
+}
+
+
+
+#hoverNotification {
+    position: fixed !important;
+    padding: 24px !important;
+    bottom: 60px !important;
+    left: 390px !important;
+    top: auto !important;
+    right: auto !important;
+    width: auto !important;
+    background-color: #BBB;
+    border: none !important;
+    border-radius: 12px;
+    color: #fff;
+    background-color: $primaryColor;
+}

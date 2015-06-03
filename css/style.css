@@ -1,0 +1,155 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+#page-head {
+  background-color: #2a9fd6;
+}
+
+#page-head #header {
+  background-color: inherit;
+  position: relative;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  height: 42px;
+}
+
+#page-head #header #jenkins-head-icon {
+  display: none;
+}
+
+#page-head #header #jenkins-name-icon {
+  position: absolute;
+  left: -8px;
+}
+
+#page-head #breadcrumbBar {
+  background-color: #F6FAF2;
+  position: fixed;
+  top: 66px !important;
+  height: 36px !important;
+}
+
+#page-head #breadcrumbBar #breadcrumbs {
+  border: none;
+}
+
+#page-head #breadcrumbBar .top-sticker {
+  background-color: #F6FAF2;
+  top: 66px !important;
+  height: 36px !important;
+  border-bottom: 1px solid #ddd;
+}
+
+#page-head #breadcrumbBar .top-sticker-inner {
+  background-color: #F6FAF2;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 24px;
+  line-height: 24px;
+}
+
+#search-box {
+  background: #fff;
+  padding-left: 2px;
+}
+
+.icon-help {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url() no-repeat;
+  width: 24px;
+  /* Width of new image */
+  height: 24px;
+  /* Height of new image */
+  padding-left: 24px;
+  /* Equal to width of new image */
+}
+
+#footer {
+  font-size: 9pt;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#l10n-footer {
+  display: none !important;
+}
+
+#projectstatus {
+  border-radius: 0px;
+}
+
+#projectstatus .header {
+  border: none;
+  border-radius: 0px;
+}
+
+#projectstatus .header th {
+  background-color: #fff;
+  border-radius: 0px;
+}
+
+#projectstatus tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.025) !important;
+}
+
+#projectstatus tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
+.pane-frame {
+  border: solid 1px #ddd;
+  border-radius: 0px;
+}
+
+body, table, form, input, td, th, p, textarea, select {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 10pt;
+}
+
+body {
+  background: #fff !important;
+}
+
+#page-head {
+  position: fixed;
+  height: 102px;
+  left: 0px;
+  right: 0px;
+}
+
+#page-body {
+  position: fixed;
+  top: 102px;
+  bottom: 42px;
+  left: 0px;
+  right: 0px;
+}
+
+#footer-container {
+  position: fixed;
+  height: 42px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#side-panel {
+  border-right: 1px solid #ddd;
+}
+
+#hoverNotification {
+  position: fixed !important;
+  padding: 24px !important;
+  bottom: 60px !important;
+  left: 390px !important;
+  top: auto !important;
+  right: auto !important;
+  width: auto !important;
+  background-color: #BBB;
+  border: none !important;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #2a9fd6;
+}
