@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 #page-head {
-  background-color: #2a9fd6;
+  background-color: #1B2224;
+  z-index: 123;
+  box-shadow: 0px 1px 7px #aaa;
 }
 
 #page-head #header {
@@ -24,26 +26,44 @@
   background-color: #F6FAF2;
   position: fixed;
   top: 66px !important;
-  height: 36px !important;
+  height: 48px !important;
 }
 
 #page-head #breadcrumbBar #breadcrumbs {
   border: none;
+  height: 48px;
+}
+
+#page-head #breadcrumbBar #breadcrumbs li {
+  height: 48px;
+}
+
+#page-head #breadcrumbBar #breadcrumbs li a {
+  height: 48px;
+  line-height: 48px;
+}
+
+#page-head #breadcrumbBar #right-top-nav {
+  height: 48px;
+}
+
+#page-head #breadcrumbBar #right-top-nav a {
+  height: 48px;
+  line-height: 48px;
+  text-decoration: none;
+  font-size: 8pt;
 }
 
 #page-head #breadcrumbBar .top-sticker {
   background-color: #F6FAF2;
   top: 66px !important;
-  height: 36px !important;
+  height: 48px !important;
   border-bottom: 1px solid #ddd;
 }
 
 #page-head #breadcrumbBar .top-sticker-inner {
   background-color: #F6FAF2;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  height: 24px;
-  line-height: 24px;
+  height: 48px;
 }
 
 #search-box {
@@ -64,6 +84,7 @@
 }
 
 #footer {
+  display: none;
   font-size: 9pt;
 }
 
@@ -106,6 +127,7 @@ body, table, form, input, td, th, p, textarea, select {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 10pt;
+  font-weight: 600;
 }
 
 body {
@@ -114,20 +136,26 @@ body {
 
 #page-head {
   position: fixed;
-  height: 102px;
+  height: 114px;
   left: 0px;
   right: 0px;
 }
 
 #page-body {
+  min-height: 200px !important;
   position: fixed;
-  top: 102px;
-  bottom: 42px;
+  top: 114px;
+  bottom: 0px;
   left: 0px;
   right: 0px;
 }
 
+#bottom-sticker {
+  width: auto;
+}
+
 #footer-container {
+  display: none;
   position: fixed;
   height: 42px;
   bottom: 0px;
@@ -135,8 +163,61 @@ body {
   right: 0px;
 }
 
+.white-text {
+  color: #FFF !important;
+}
+
+#main-panel {
+  position: fixed !important;
+  top: 114px;
+  left: 370px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  overflow-y: auto;
+  width: auto !important;
+}
+
+#main-panel-content {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  position: relative;
+}
+
 #side-panel {
+  position: fixed !important;
+  top: 114;
+  left: 0px;
+  bottom: 0px;
+  margin: 0px !important;
+  padding-left: 15px;
+  width: 370px;
+  background-color: #232B2D;
   border-right: 1px solid #ddd;
+  color: #FFF;
+}
+
+#side-panel a {
+  color: #6F7B7E;
+}
+
+#side-panel a img {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url() no-repeat;
+  width: 24px;
+  /* Width of new image */
+  height: 24px;
+  /* Height of new image */
+  padding-left: 24px;
+  /* Equal to width of new image */
+}
+
+#side-panel a:hover, #side-panel a:focus {
+  color: #FFF;
+  text-decoration: none !important;
 }
 
 #hoverNotification {

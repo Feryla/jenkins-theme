@@ -1,6 +1,8 @@
 @import "_base.scss";
 #page-head{
-    background-color: $primaryColor;
+    background-color: #1B2224;
+    z-index: 123;
+    box-shadow: 0px 1px 7px #aaa;
 
     #header {
         background-color: inherit;
@@ -24,26 +26,40 @@
         background-color: #F6FAF2;
         position: fixed;
         top: 66px !important;
-        height: 36px !important;
+        height: 48px !important;
 
         #breadcrumbs {
             border: none;
+            height: 48px;
+            li {
+                a {
+                    height: 48px;
+                    line-height: 48px;
+                }
+                height: 48px;
+            }
+        }
+        #right-top-nav {
+            height: 48px;
+            a {
+                height: 48px;
+                line-height: 48px;
+                text-decoration: none;
+                font-size: 8pt;
+            }
+
         }
 
         .top-sticker {
             background-color: #F6FAF2;
             top: 66px !important;
-            height: 36px !important;
+            height: 48px !important;
             border-bottom: 1px solid #ddd;
 
         }
         .top-sticker-inner {
             background-color: #F6FAF2;
-
-            padding-top: 6px;
-            padding-bottom: 6px;
-            height: 24px;
-            line-height: 24px;
+            height: 48px;
         }
 
     }
