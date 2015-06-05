@@ -1,4 +1,3 @@
-@import "_base.scss";
 #page-head{
     background-color: #1B2224;
     z-index: 123;
@@ -23,7 +22,7 @@
     }
 
     #breadcrumbBar {
-        background-color: #F6FAF2;
+        background-color: #FAFAFA;
         position: fixed;
         top: 66px !important;
         height: 48px !important;
@@ -51,14 +50,14 @@
         }
 
         .top-sticker {
-            background-color: #F6FAF2;
+            background-color: #FAFAFA;
             top: 66px !important;
             height: 48px !important;
             border-bottom: 1px solid #ddd;
 
         }
         .top-sticker-inner {
-            background-color: #F6FAF2;
+            background-color: #FAFAFA;
             height: 48px;
         }
 

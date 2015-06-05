@@ -1,0 +1,41 @@
+#buildQueue, #executors, #buildHistory {
+    padding: 0px !important;
+    border: none;
+    color: #eee !important;
+
+    .row {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .pane-header, .pane-footer {
+        margin-bottom: 0.2em;
+        color: #ddd;
+        font-size: 11pt;
+        padding: 0px;
+        background-color: inherit;
+        border: none;
+
+        a[href="/computer/"] {
+            color: #ddd;
+        }
+
+    }
+    td {
+        color: #6F7B7E;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgba(255,255,255,.025) !important;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(255,255,255,.055) !important;
+    }
+
+
+}
+
+#buildQueue:focus {
+    outline: 0;
+}

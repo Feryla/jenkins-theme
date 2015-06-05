@@ -23,7 +23,7 @@
 }
 
 #page-head #breadcrumbBar {
-  background-color: #F6FAF2;
+  background-color: #FAFAFA;
   position: fixed;
   top: 66px !important;
   height: 48px !important;
@@ -55,14 +55,14 @@
 }
 
 #page-head #breadcrumbBar .top-sticker {
-  background-color: #F6FAF2;
+  background-color: #FAFAFA;
   top: 66px !important;
   height: 48px !important;
   border-bottom: 1px solid #ddd;
 }
 
 #page-head #breadcrumbBar .top-sticker-inner {
-  background-color: #F6FAF2;
+  background-color: #FAFAFA;
   height: 48px;
 }
 
@@ -83,17 +83,130 @@
   /* Equal to width of new image */
 }
 
-#footer {
-  display: none;
-  font-size: 9pt;
+@-webkit-keyframes building {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#footer a {
-  text-decoration: none;
+@-moz-keyframes building {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#l10n-footer {
-  display: none !important;
+Keyframes building 0% {
+  opacity: 1;
+}
+
+Keyframes building 50% {
+  opacity: 0.15;
+}
+
+Keyframes building 100% {
+  opacity: 1;
+}
+
+img[src$="blue.png"], img[src$="blue.gif"], img[src$="blue_anime.gif"],
+img[src$="yellow.png"], img[src$="yellow.gif"], img[src$="yellow_anime.gif"],
+img[src$="red.png"], img[src$="red.gif"], img[src$="red_anime.gif"],
+img[src$="grey.png"], img[src$="grey.gif"], img[src$="grey_anime.gif"],
+img[src$="disabled.png"], img[src$="disabled.gif"], img[src$="disabled_anime.gif"],
+img[src$="nobuilt.png"], img[src$="nobuilt.gif"], img[src$="nobuilt_anime.gif"],
+img[src$="aborted.png"], img[src$="aborted.gif"], img[src$="aborted_anime.gif"] {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 3px #333;
+}
+
+img[src*="blue.png"], img[src*="blue_anime.gif"] {
+  background: #326ca6 !important;
+}
+
+img[src*="yellow.png"], img[src*="yellow_anime.gif"] {
+  background: #FFFB00 !important;
+}
+
+img[src*="red.png"], img[src*="red_anime.gif"] {
+  background: #FF7373 !important;
+}
+
+img[src*="_anime.gif"] {
+  -webkit-animation: building 1.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: building 1.75s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: building 1.75s;
+  -o-animation-iteration-count: infinite;
+}
+
+img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
+  width: 42px;
+  height: 10px;
+}
+
+img[src$="images/16x16/blue.png"], img[src$="images/16x16/blue.gif"], img[src$="images/16x16/blue_anime.gif"],
+img[src$="images/16x16/yellow.png"], img[src$="images/16x16/yellow.gif"], img[src$="images/16x16/yellow_anime.gif"],
+img[src$="images/16x16/red.png"], img[src$="images/16x16/red.gif"], img[src$="images/16x16/red_anime.gif"],
+img[src$="images/16x16/grey.png"], img[src$="images/16x16/grey.gif"], img[src$="images/16x16/grey_anime.gif"],
+img[src$="images/16x16/disabled.png"], img[src$="images/16x16/disabled.gif"], img[src$="images/16x16/disabled_anime.gif"],
+img[src$="images/16x16/nobuilt.png"], img[src$="images/16x16/nobuilt.gif"], img[src$="images/16x16/nobuilt_anime.gif"],
+img[src$="images/16x16/aborted.png"], img[src$="images/16x16/aborted.gif"], img[src$="images/16x16/aborted_anime.gif"] {
+  width: 0;
+  height: 16px;
+  padding: 0 16px 0 0;
+}
+
+img[src$="images/24x24/blue.png"], img[src$="images/24x24/blue.gif"], img[src$="images/24x24/blue_anime.gif"],
+img[src$="images/24x24/yellow.png"], img[src$="images/24x24/yellow.gif"], img[src$="images/24x24/yellow_anime.gif"],
+img[src$="images/24x24/red.png"], img[src$="images/24x24/red.gif"], img[src$="images/24x24/red_anime.gif"],
+img[src$="images/24x24/grey.png"], img[src$="images/24x24/grey.gif"], img[src$="images/24x24/grey_anime.gif"],
+img[src$="images/24x24/disabled.png"], img[src$="images/24x24/disabled.gif"], img[src$="images/24x24/disabled_anime.gif"],
+img[src$="images/24x24/nobuilt.png"], img[src$="images/24x24/nobuilt.gif"], img[src$="images/24x24/nobuilt_anime.gif"],
+img[src$="images/24x24/aborted.png"], img[src$="images/24x24/aborted.gif"], img[src$="images/24x24/aborted_anime.gif"] {
+  width: 0;
+  height: 24px;
+  padding: 0 24px 0 0;
+}
+
+img[src$="images/32x32/blue.png"], img[src$="images/32x32/blue.gif"], img[src$="images/32x32/blue_anime.gif"],
+img[src$="images/32x32/yellow.png"], img[src$="images/32x32/yellow.gif"], img[src$="images/32x32/yellow_anime.gif"],
+img[src$="images/32x32/red.png"], img[src$="images/32x32/red.gif"], img[src$="images/32x32/red_anime.gif"],
+img[src$="images/32x32/grey.png"], img[src$="images/32x32/grey.gif"], img[src$="images/32x32/grey_anime.gif"],
+img[src$="images/32x32/disabled.png"], img[src$="images/32x32/disabled.gif"], img[src$="images/32x32/disabled_anime.gif"],
+img[src$="images/32x32/nobuilt.png"], img[src$="images/32x32/nobuilt.gif"], img[src$="images/32x32/nobuilt_anime.gif"],
+img[src$="images/32x32/aborted.png"], img[src$="images/32x32/aborted.gif"], img[src$="images/32x32/aborted_anime.gif"] {
+  width: 0;
+  height: 32px;
+  padding: 0 32px 0 0;
+  margin-left: 4px;
+}
+
+img[src$="images/48x48/blue.png"], img[src$="images/48x48/blue.gif"], img[src$="images/48x48/blue_anime.gif"],
+img[src$="images/48x48/yellow.png"], img[src$="images/48x48/yellow.gif"], img[src$="images/48x48/yellow_anime.gif"],
+img[src$="images/48x48/red.png"], img[src$="images/48x48/red.gif"], img[src$="images/48x48/red_anime.gif"],
+img[src$="images/48x48/grey.png"], img[src$="images/48x48/grey.gif"], img[src$="images/48x48/grey_anime.gif"],
+img[src$="images/48x48/disabled.png"], img[src$="images/48x48/disabled.gif"], img[src$="images/48x48/disabled_anime.gif"],
+img[src$="images/48x48/nobuilt.png"], img[src$="images/48x48/nobuilt.gif"], img[src$="images/48x48/nobuilt_anime.gif"],
+img[src$="images/48x48/aborted.png"], img[src$="images/48x48/aborted.gif"], img[src$="images/48x48/aborted_anime.gif"] {
+  width: 0;
+  height: 48px;
+  padding: 0 48px 0 0;
 }
 
 #projectstatus {
@@ -106,7 +219,7 @@
 }
 
 #projectstatus .header th {
-  background-color: #fff;
+  background-color: #FAFAFA;
   border-radius: 0px;
 }
 
@@ -123,15 +236,68 @@
   border-radius: 0px;
 }
 
+#buildQueue, #executors, #buildHistory {
+  padding: 0px !important;
+  border: none;
+  color: #eee !important;
+}
+
+#buildQueue .row, #executors .row, #buildHistory .row {
+  margin: 0px;
+  padding: 0px;
+}
+
+#buildQueue .pane-header, #buildQueue .pane-footer, #executors .pane-header, #executors .pane-footer, #buildHistory .pane-header, #buildHistory .pane-footer {
+  margin-bottom: 0.2em;
+  color: #ddd;
+  font-size: 11pt;
+  padding: 0px;
+  background-color: inherit;
+  border: none;
+}
+
+#buildQueue .pane-header a[href="/computer/"], #buildQueue .pane-footer a[href="/computer/"], #executors .pane-header a[href="/computer/"], #executors .pane-footer a[href="/computer/"], #buildHistory .pane-header a[href="/computer/"], #buildHistory .pane-footer a[href="/computer/"] {
+  color: #ddd;
+}
+
+#buildQueue td, #executors td, #buildHistory td {
+  color: #6F7B7E;
+}
+
+#buildQueue tr:nth-child(odd), #executors tr:nth-child(odd), #buildHistory tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.025) !important;
+}
+
+#buildQueue tr:nth-child(even), #executors tr:nth-child(even), #buildHistory tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.055) !important;
+}
+
+#buildQueue:focus {
+  outline: 0;
+}
+
+a[href*="rssAll"], a[href="/legend"], a[href*="rssFailed"], a[href="rssLatest"], a[href="editDescription"], #footer {
+  display: none;
+}
+
 body, table, form, input, td, th, p, textarea, select {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 10pt;
-  font-weight: 600;
+  line-height: 1.5;
 }
 
 body {
-  background: #fff !important;
+  background-color: #ececec;
+  color: #333;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:visited {
+  color: #204A87;
 }
 
 #page-head {
@@ -154,6 +320,14 @@ body {
   width: auto;
 }
 
+.bottom-sticker-inner {
+  background-color: inherit;
+}
+
+.bottom-sticker-edge {
+  display: none;
+}
+
 #footer-container {
   display: none;
   position: fixed;
@@ -164,7 +338,7 @@ body {
 }
 
 .white-text {
-  color: #FFF !important;
+  color: #fafafa !important;
 }
 
 #main-panel {
@@ -188,36 +362,28 @@ body {
 
 #side-panel {
   position: fixed !important;
-  top: 114;
+  top: 114px;
   left: 0px;
   bottom: 0px;
   margin: 0px !important;
-  padding-left: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   width: 370px;
-  background-color: #232B2D;
-  border-right: 1px solid #ddd;
-  color: #FFF;
+  background-color: #222;
+  color: #eee;
 }
 
 #side-panel a {
   color: #6F7B7E;
 }
 
-#side-panel a img {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url() no-repeat;
-  width: 24px;
-  /* Width of new image */
-  height: 24px;
-  /* Height of new image */
-  padding-left: 24px;
-  /* Equal to width of new image */
-}
-
 #side-panel a:hover, #side-panel a:focus {
   color: #FFF;
   text-decoration: none !important;
+}
+
+.pane-frame {
+  border: none !important;
 }
 
 #hoverNotification {
@@ -228,9 +394,9 @@ body {
   top: auto !important;
   right: auto !important;
   width: auto !important;
-  background-color: #BBB;
   border: none !important;
   border-radius: 12px;
-  color: #fff;
-  background-color: #2a9fd6;
+  color: #fafafa;
+  background-color: #326ca6;
+  box-shadow: 0px 0px 3px #333;
 }

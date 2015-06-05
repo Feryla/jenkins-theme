@@ -1,0 +1,3 @@
+a[href="rssAll"], a[href="/legend"], a[href="rssFailed"], a[href="rssLatest"] {
+  display: none;
+}
