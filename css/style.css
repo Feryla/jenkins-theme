@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 #page-head {
   background-color: #1B2224;
   z-index: 123;
@@ -191,10 +191,10 @@ img[src$="images/32x32/grey.png"], img[src$="images/32x32/grey.gif"], img[src$="
 img[src$="images/32x32/disabled.png"], img[src$="images/32x32/disabled.gif"], img[src$="images/32x32/disabled_anime.gif"],
 img[src$="images/32x32/nobuilt.png"], img[src$="images/32x32/nobuilt.gif"], img[src$="images/32x32/nobuilt_anime.gif"],
 img[src$="images/32x32/aborted.png"], img[src$="images/32x32/aborted.gif"], img[src$="images/32x32/aborted_anime.gif"] {
-  width: 0;
-  height: 32px;
-  padding: 0 32px 0 0;
-  margin-left: 4px;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 28px 28px 0 0;
+  margin: 4px 0px 4px 20px;
 }
 
 img[src$="images/48x48/blue.png"], img[src$="images/48x48/blue.gif"], img[src$="images/48x48/blue_anime.gif"],
@@ -209,6 +209,15 @@ img[src$="images/48x48/aborted.png"], img[src$="images/48x48/aborted.gif"], img[
   padding: 0 48px 0 0;
 }
 
+#projectstatus-tabBar {
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+}
+
+#projectstatus-tabBar .tab {
+  margin: 0px !important;
+}
+
 #projectstatus {
   border-radius: 0px;
 }
@@ -221,6 +230,10 @@ img[src$="images/48x48/aborted.png"], img[src$="images/48x48/aborted.gif"], img[
 #projectstatus .header th {
   background-color: #FAFAFA;
   border-radius: 0px;
+}
+
+#projectstatus .header th:first-child {
+  padding-left: 22px;
 }
 
 #projectstatus tr:nth-child(odd) {
@@ -281,8 +294,9 @@ a[href*="rssAll"], a[href="/legend"], a[href*="rssFailed"], a[href="rssLatest"],
 }
 
 body, table, form, input, td, th, p, textarea, select {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 10pt;
   line-height: 1.5;
 }

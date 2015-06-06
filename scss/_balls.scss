@@ -106,10 +106,10 @@ img[src$="images/32x32/grey.png"],     img[src$="images/32x32/grey.gif"],     im
 img[src$="images/32x32/disabled.png"], img[src$="images/32x32/disabled.gif"], img[src$="images/32x32/disabled_anime.gif"],
 img[src$="images/32x32/nobuilt.png"],  img[src$="images/32x32/nobuilt.gif"],  img[src$="images/32x32/nobuilt_anime.gif"],
 img[src$="images/32x32/aborted.png"],  img[src$="images/32x32/aborted.gif"],  img[src$="images/32x32/aborted_anime.gif"] {
-    width: 0;
-    height: 32px;
-    padding: 0 32px 0 0;
-    margin-left: 4px;
+    width: 28px !important;
+    height: 28px !important;
+    padding: 28px 28px 0 0;
+    margin: 4px 0px 4px 20px;
 }
 
 img[src$="images/48x48/blue.png"],     img[src$="images/48x48/blue.gif"],     img[src$="images/48x48/blue_anime.gif"],

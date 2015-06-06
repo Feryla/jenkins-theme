@@ -1,4 +1,13 @@
 @import "_balls.scss";
+#projectstatus-tabBar {
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    .tab {
+        margin: 0px !important;
+    }
+}
+
+
 #projectstatus {
     border-radius: 0px;
 
@@ -8,6 +17,11 @@
             border-radius: 0px;
 
         }
+        th:first-child {
+            padding-left: 22px;
+        }
+
+
         border: none;
         border-radius: 0px;
     }
