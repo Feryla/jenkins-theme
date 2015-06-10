@@ -1,10 +1,35 @@
 @import "_balls.scss";
-#projectstatus-tabBar {
+.tabBarFrame {
+
     margin-bottom: 12px;
     border: 1px solid #ddd;
+
+    .tabBar {
+        top: 0px;
+    }
+
     .tab {
         margin: 0px !important;
+        padding: 0px !important;
+        border: none !important;
+
+        a {
+            border: none !important;
+            padding: 8px 12px;
+
+        }
     }
+
+    .tab.active {
+        background-color: #326ca6 ;
+
+        a {
+            background-color: #326ca6 ;
+            color: #fafafa;
+        }
+
+    }
+
 }
 
 
