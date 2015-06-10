@@ -6,7 +6,7 @@ function updateSelectors() {
     }
 }
 
-$jq(document).change(function() {
+$jq(document).ready(function() {
     updateSelectors();
 });
 
